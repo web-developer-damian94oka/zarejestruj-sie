@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title {
+    order: -1;
+}
+
+.logo {
+    order: -2;
+}
+
+.sim,
+.logo,
+.empty {
+    min-height: 1px;
+    width: 50px;
+}
+
+@media only screen and (min-width: 960px) {
+    .page {width: 60%;}
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-top: 150px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+form {
+    width: 250px;
+    align-self: center;
+}
+
+input[type='email'],
+input[type='text'],
+input[type='password'] {
+    width: 250px;
+}
+
+input[type='submit'] {
+    width: 250px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container {
+    align-self: center;
+    width: 640px;
+}
